@@ -5,10 +5,10 @@ import (
 )
 
 //  插入排序
-func insertionSort(arr []int, asc bool) []int {
+func insertionSort(arr []int, asc bool) {
 	length := len(arr)
 	if length < 2 {
-		return arr
+		return
 	}
 	for i := 1; i < length; i++ {
 		x := i
@@ -22,11 +22,12 @@ func insertionSort(arr []int, asc bool) []int {
 		}
 
 	}
-	return arr
 }
 
 func main() {
 	arr := []int{31, 41, 59, 26, 41, 58}
-	fmt.Println(insertionSort(arr, true))
-	fmt.Println(insertionSort(arr, false))
+	insertionSort(arr, true)
+	fmt.Println(arr)
+	insertionSort(arr, false)
+	fmt.Println(arr)
 }
