@@ -29,7 +29,7 @@ func reply(conn net.Conn) {
 }
 
 func main() {
-	listener, err := net.Listen("tcp", "0.0.0.0:8888")
+	listener, err := net.Listen("tcp", "0.0.0.0:12345")
 	defer listener.Close()
 	if err != nil {
 		fmt.Println(err)
