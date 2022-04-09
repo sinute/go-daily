@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 //  插入排序
 func insertionSort(arr []int, asc bool) {
 	length := len(arr)
@@ -22,12 +18,4 @@ func insertionSort(arr []int, asc bool) {
 		}
 
 	}
-}
-
-func main() {
-	arr := []int{31, 41, 59, 26, 41, 58}
-	insertionSort(arr, true)
-	fmt.Println(arr)
-	insertionSort(arr, false)
-	fmt.Println(arr)
 }

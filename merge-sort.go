@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 func merge(l []int, r []int) (arr []int) {
 	lLength := len(l)
 	rLength := len(r)
@@ -35,10 +31,4 @@ func mergeSort(arr []int, start, end int) []int {
 	l := arr[start : (start+end)/2]
 	r := arr[(start+end)/2 : end]
 	return merge(mergeSort(l, 0, len(l)), mergeSort(r, 0, len(r)))
-}
-
-func main() {
-	arr := []int{31, 41, 59, 26, 41, 58}
-	fmt.Println(mergeSort(arr, 2, 6))
-	fmt.Println(mergeSort(arr, 0, 6))
 }

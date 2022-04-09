@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 func fibonacci() chan int {
 	in := make(chan int, 2)
 	in <- 0
@@ -18,11 +14,4 @@ func fibonacci() chan int {
 		}
 	}(in, out)
 	return out
-}
-
-func main() {
-	x := fibonacci()
-	for i := 0; i < 10; i++ {
-		fmt.Println(<-x)
-	}
 }

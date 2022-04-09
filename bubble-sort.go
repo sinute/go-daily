@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 func bubbleSort(arr []int) {
 	length := len(arr)
 	if length < 2 {
@@ -16,10 +12,4 @@ func bubbleSort(arr []int) {
 			}
 		}
 	}
-}
-
-func main() {
-	arr := []int{31, 41, 59, 26, 41, 58}
-	bubbleSort(arr)
-	fmt.Println(arr)
 }

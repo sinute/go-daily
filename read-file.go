@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-func main() {
+func ReadFile() {
 	f, _ := os.Open("readme.md")
 	defer f.Close()
 	r := bufio.NewReader(f)

@@ -9,7 +9,7 @@ type printing struct {
 	ptr *int
 }
 
-func main() {
+func Printing() {
 	p := new(printing)
 	p.val = 233
 	p.ptr = &p.val
